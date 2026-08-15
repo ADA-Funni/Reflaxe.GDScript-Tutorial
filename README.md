@@ -13,7 +13,7 @@ It works by transpiling your Haxe code into GDScript, to be cleanly used within 
 4. Set the variable name to "GODOT_PATH", and set the variable value to where your Godot Engine's exe file is.
 5. Restart Command Prompt.
 ### Set up your project
-1. Run `cd (your project folder)` in the terminal.
+1. Run `cd [Replace with your project folder]` in the terminal.
 2. Copy the following to a file named "hmm.json".
 ```json
 {
