@@ -1,14 +1,16 @@
-# Reflaxe
+# Reflaxe (GDScript)
+Reflaxe (GDScript) is a tool used for programming Godot Engine projects in Haxe.
+It works by transpiling your Haxe code into GDScript, to be cleanly used within Godot Engine.
 ## Setup
 > [!IMPORTANT]
-> Install Haxe and Godot before following this tutorial!
-### Add Godot to your system PATH
+> Install Haxe and Godot Engine before following this tutorial!
+### Add Godot Engine to your system PATH
 > [!WARNING]
 > This step differs depending on your OS. Just follow the same principles, and Google how to create environment variables on your OS if it isn't Windows.
 1. Search for "System environment variables" in the Start Menu.
 2. Click "Environment variables".
 3. Go to "System variables", and click "New".
-4. Set the variable name to "GODOT_PATH", and set the variable value to where your Godot's exe file is.
+4. Set the variable name to "GODOT_PATH", and set the variable value to where your Godot Engine's exe file is.
 5. Restart Command Prompt.
 ### Set up your project
 1. Run `cd (your project folder)` in the terminal.
