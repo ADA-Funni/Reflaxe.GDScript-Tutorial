@@ -100,4 +100,4 @@ func _ready() -> void:
         "methodName": "_ready"
     })
 ```
-13. Save the file. The VS Code extension should convert it to GDScript instantly. (The exported GDScript files will be in assets/gdscript.)
+13. Save the file. The VS Code extension from earlier should convert your Haxe code to GDScript instantly, every time you save. (The exported GDScript files will be in assets/gdscript.)
