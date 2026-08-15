@@ -42,7 +42,30 @@ It works by transpiling your Haxe code into GDScript, to be cleanly used within 
     }
 }
 ```
-10. Copy the following into a file named "build.hxml".
+10. Copy the following into a file named ".gitignore".
+```gitignore
+# Godot 4+ specific ignores
+.godot/
+/android/
+extension_api.json
+
+# VS Code specific ignores
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/schema/
+/dump
+
+# Haxe specific ignores
+/.haxelib
+
+# Reflaxe (GDScript) specific ignores
+assets/gdscript/
+assets/haxe/godot/
+```
+11. Copy the following into a file named "build.hxml".
 ```hxml
 -cp assets/haxe
 -lib gdscript
@@ -51,7 +74,7 @@ It works by transpiling your Haxe code into GDScript, to be cleanly used within 
 # Stops the "cug" package from being buttfucked by DCE.
 cug
 ```
-11. Copy the following into a file named "MyClass.hx" in "assets/haxe/game". (That folder is where you will put ALL of your Haxe code.)
+12. Copy the following into a file named "MyClass.hx" in "assets/haxe/game". (That folder is where you will put ALL of your Haxe code.)
 ```haxe
 package game;
 
@@ -62,4 +85,21 @@ class MyClass extends godot.Node {
     }
 }
 ```
-12. Save the file. The VS Code extension should convert it to GDScript instantly. (The exported GDScript files will be in assets/gdscript.)
+For the curious, this will generate:
+```gdscript
+extends Node
+class_name MyClass
+
+func _init() -> void:
+    pass
+
+func _ready() -> void:
+    super._ready()
+    haxe_Log.trace.call("Hello, World!", {
+        "fileName": "assets/haxe/game/MyClass.hx",
+        "lineNumber": 6,
+        "className": "game.MyClass",
+        "methodName": "_ready"
+    })
+```
+13. Save the file. The VS Code extension should convert it to GDScript instantly. (The exported GDScript files will be in assets/gdscript.)
