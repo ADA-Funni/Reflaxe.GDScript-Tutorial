@@ -1,8 +1,10 @@
 # Reflaxe
 ## Setup
-> [!IMPORTANT] Install Haxe and Godot before following this tutorial!
+> [!IMPORTANT]
+> Install Haxe and Godot before following this tutorial!
 ### Add Godot to your system PATH
-> [!WARNING] This step differs depending on your OS. Just follow the same principles, and Google how to create environment variables on your OS if it isn't Windows.
+> [!WARNING]
+> This step differs depending on your OS. Just follow the same principles, and Google how to create environment variables on your OS if it isn't Windows.
 1. Search for "System environment variables" in the Start Menu.
 2. Click "Environment variables".
 3. Go to "System variables", and click "New".
