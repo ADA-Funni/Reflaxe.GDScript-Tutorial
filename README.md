@@ -14,7 +14,7 @@ It works by transpiling your Haxe code into GDScript, to be cleanly used within 
 5. Restart Command Prompt.
 ### Set up your project
 1. Run `cd (your project folder)` in the terminal.
-2. Copy this to a file named "hmm.json".
+2. Copy the following to a file named "hmm.json".
 ```json
 {
   "dependencies": [
@@ -28,10 +28,10 @@ It works by transpiling your Haxe code into GDScript, to be cleanly used within 
 3. Run `haxelib install hmm` in the terminal.
 4. Run `haxelib run hmm setup` in the terminal.
 5. Run `hmm install` in the terminal.
-6. Copypaste [this file](https://raw.githubusercontent.com/godotengine/godot-headers/refs/heads/master/extension_api.json) to a file named "extension_api.json".
+6. Copy [this](https://raw.githubusercontent.com/godotengine/godot-headers/refs/heads/master/extension_api.json) to a file named "extension_api.json".
 7. Make three folders, "assets", "assets/haxe", and "assets/gdscript".
 8. Install the VSCode extension "Run On Save" by emeraldwalk.
-9. Copypaste this into your "vscode/settings.json" file.
+9. Copy the following into your "vscode/settings.json" file.
 ```json
 {
     "emeraldwalk.runonsave": {
@@ -42,7 +42,7 @@ It works by transpiling your Haxe code into GDScript, to be cleanly used within 
     }
 }
 ```
-10. Copypaste this into a file named "build.hxml".
+10. Copy the following into a file named "build.hxml".
 ```hxml
 -cp assets/haxe
 -lib gdscript
@@ -51,7 +51,7 @@ It works by transpiling your Haxe code into GDScript, to be cleanly used within 
 # Stops the "cug" package from being buttfucked by DCE.
 cug
 ```
-11. Copy this into a file named "MyClass.hx" in "assets/haxe/game". (That folder is where you will put ALL of your Haxe code.)
+11. Copy the following into a file named "MyClass.hx" in "assets/haxe/game". (That folder is where you will put ALL of your Haxe code.)
 ```haxe
 package game;
 
