@@ -85,7 +85,7 @@ class MyClass extends godot.Node {
     }
 }
 ```
-For the curious, this will generate:
+For the curious, this Haxe code will generate the following GDScript code:
 ```gdscript
 extends Node
 class_name MyClass
