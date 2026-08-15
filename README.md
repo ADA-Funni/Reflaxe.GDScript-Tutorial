@@ -70,9 +70,7 @@ assets/haxe/godot/
 -cp assets/haxe
 -lib gdscript
 -D gdscript-output=assets/gdscript
-
-# Stops the "cug" package from being buttfucked by DCE.
-cug
+game
 ```
 12. Copy the following into a file named "MyClass.hx" in "assets/haxe/game". (That folder is where you will put ALL of your Haxe code.)
 ```haxe
