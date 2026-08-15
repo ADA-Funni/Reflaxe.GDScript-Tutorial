@@ -29,9 +29,9 @@ It works by transpiling your Haxe code into GDScript, to be cleanly used within 
 4. Run `haxelib run hmm setup` in the terminal.
 5. Run `hmm install` in the terminal.
 6. Copy [this](https://raw.githubusercontent.com/godotengine/godot-headers/refs/heads/master/extension_api.json) to a file named "extension_api.json".
-7. Make three folders, "assets", "assets/haxe", and "assets/gdscript".
-8. Install the VSCode extension "Run On Save" by emeraldwalk.
-9. Copy the following into your "vscode/settings.json" file.
+7. Make three folders: "assets", "assets/haxe", and "assets/gdscript".
+8. Install the VS Code extension "Run On Save" by emeraldwalk.
+9. Copy the following into your ".vscode/settings.json" file.
 ```json
 {
     "emeraldwalk.runonsave": {
